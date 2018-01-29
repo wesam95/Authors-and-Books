@@ -52,11 +52,11 @@ include_once '../../models/authers/authers.php';?>
 
 		var d = JSON.parse(data);
 		
-		var row = $("#table2").find("#"+d[1]['ID']+"");
-		$(row).find(".name").text(d[1]['Name']);
-		$(row).find(".auther").text(d[0]['Name']);
+		var row = $("#table2").find("#"+d[0]['ID']+"");
+		$(row).find(".name").text(d[0]['Name']);
+		$(row).find(".auther").text(d[0]['UName']);
 		$("#div2").addClass("hidden");
-		$(row).find(".auther").attr('data-id' , d[0]['ID']);	
+		$(row).find(".auther").attr('data-id' , d[0]['UID']);	
 });
 
 
